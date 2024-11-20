@@ -1,10 +1,5 @@
-from PyQt6.QtWidgets import (
-    QListWidget,
-    QListWidgetItem,
-    QMessageBox,
-    QMenu,
-)
-from PyQt6.QtGui import QColor
+from PyQt6.QtWidgets import QListWidget, QListWidgetItem, QMessageBox, QMenu
+
 
 class TaskTracker(QListWidget):
     def __init__(self):
