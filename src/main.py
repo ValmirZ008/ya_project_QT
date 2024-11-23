@@ -26,8 +26,8 @@ from PyQt6.QtWidgets import (
 class Manager(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Tre1io")
-        self.setGeometry(220, 150, 1200, 700)
+        self.setWindowTitle("Task Tracker")
+        self.setGeometry(330, 250, 1000, 500)
 
         self.db_connection = sqlite3.connect("tasks.db")
         self.setup_database()
@@ -136,7 +136,7 @@ class Manager(QMainWindow):
 
     def set_background_color_for_task_lists(self, color):
         for task_list in [self.todo_list, self.in_progress_list, self.done_list]:
-            task_list.setStyleSheet(f"background-color: {color.name()};")
+            task_list.setStyleSheet(f"задний фон: {color.name()};")
 
     def toggle_filter(self):
         is_visible = self.filter_widget.isVisible()
