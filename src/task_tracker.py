@@ -51,3 +51,4 @@ class TaskTracker(QListWidget):
             QMessageBox.warning(
                 self, "Ошибка", "Пожалуйста, выберите задачу для удаления."
             )
+
