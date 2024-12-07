@@ -139,7 +139,7 @@ class MainWindow(QMainWindow):
     def set_task_color(self, item, priority):
         colors = {
             "Низкий": QColor("green"),
-            "Средний": QColor("orange"),
+            "Средний": QColor("dark orange"),
             "Высокий": QColor("red"),
         }
         item.setBackground(colors.get(priority, QColor("white")))
